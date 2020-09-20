@@ -53,7 +53,7 @@ If you need more information related to Vagrant, go to the official [Vagrant doc
 
 ### Fixing known issues ###
 
-##### Failed to open/create the internal network #####
+#### Failed to open/create the internal network ####
 
 If you are on Windows, then you may get the following error:
 ```
@@ -83,6 +83,6 @@ Both Vagrant and Docker have a vast library of community-contributed "images" or
 
 ### License ###
 
-##### Creative Commons Attribution 4.0 International #####
+#### Creative Commons Attribution 4.0 International ####
 
 Except where otherwise noted, content on this Github repository is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
