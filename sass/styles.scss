@@ -1,0 +1,137 @@
+@import "./imports.scss";
+@import "./variables.scss";
+@import "./utils.scss";
+@import "./mix.scss";
+@import "./extends.scss";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+/* HEADER */
+.header {
+    @extend .container;
+    align-items: center;
+    box-shadow: $box-shadow;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.header__title {
+    @extend .header__elements;
+    @include margin(50px, 0px);
+}
+
+
+
+/* RESUME */
+.resume {
+    @extend .main;
+    background-color: $description;
+    flex-wrap: wrap;
+}
+
+.resume__description {
+    width: 60%;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.resume__description--title h1,
+h2 {
+    font-size: 40px;
+    margin-top: 5px;
+    font-family: $title;
+}
+
+.resume__description--title h2 {
+    margin-bottom: 15px;
+}
+
+.resume__description--paragraph {
+    letter-spacing: 1.1;
+    font-family: $text;
+}
+
+.resume__description--paragraph a {
+    text-decoration: underline;
+    color: black;
+}
+
+.resume__description--paragraph a,
+em {
+    font-weight: bold;
+}
+
+.resume__image img {
+    border-radius: 90%;
+    box-shadow: $box-shadow;
+    width: 100%;
+}
+
+/* IMAGES */
+.images {
+    @extend .main;
+    flex-wrap: wrap;
+}
+
+.images__card {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 400px;
+    width: 350px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $marginCard;
+}
+
+/* IMAGE PROJECT AND DATA */
+.images__card--title {
+    margin:$marginCard;
+    text-align: center;
+    font-family: $title;
+}
+.images__card--project {
+    margin: $marginCard;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images__card--project:hover {
+    cursor: pointer;
+}
+
+.images__card--mainDescription {
+    @include margin($marginCard, $marginCard);
+    font-family: $text;
+}
+
+.images__card--mainDescription i {
+    color: black;
+}
+
+/* FOOTER */
+.footer {
+    @extend .container;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    height: 50px;
+}
+
+
+
+/*  RESPONSIVE      */
+@media only screen and (max-width: 1200px) {
+    .header__title {
+        font-size: 10px;
+    }
+
+    .resume__description {
+        margin-left: 0px;
+    }
+}

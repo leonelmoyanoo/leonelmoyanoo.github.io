@@ -1,0 +1,48 @@
+/* EXTENDS */
+.container {
+    background-color: $container;
+    width: 100%;
+    color: $words;
+    display: flex;
+
+    a {
+        text-decoration: none;
+        color: $words;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .social a {
+        margin: 10px;
+    }
+
+    .social a:hover {
+        text-decoration: none;
+    }
+}
+
+.header__elements {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+    .social i {
+        margin-left: 5px;
+        margin-top: 10px;
+        color: black
+    }
+
+    .social a:hover {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+/* font-family: 'Lora', serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap");
+/* font-family: 'Raleway', sans-serif; */
+/* project'S CARDS */
+/* MIX */
+/* EXTENDS */
+.container, .footer, .header {
+  background-color: #111721;
+  width: 100%;
+  color: #f5f0f0;
+  display: flex;
+}
+.container a, .footer a, .header a {
+  text-decoration: none;
+  color: #f5f0f0;
+}
+.container a:hover, .footer a:hover, .header a:hover {
+  text-decoration: underline;
+}
+.container .social a, .footer .social a, .header .social a {
+  margin: 10px;
+}
+.container .social a:hover, .footer .social a:hover, .header .social a:hover {
+  text-decoration: none;
+}
+
+.header__elements, .header__title {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.main, .images, .resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.main .social i, .images .social i, .resume .social i {
+  margin-left: 5px;
+  margin-top: 10px;
+  color: black;
+}
+.main .social a:hover, .images .social a:hover, .resume .social a:hover {
+  text-decoration: none;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+/* HEADER */
+.header {
+  align-items: center;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 70px;
+  justify-content: space-between;
+}
+
+.header__title {
+  margin-left: 50px;
+  margin-right: 0px;
+}
+
+/* RESUME */
+.resume {
+  background-color: rgba(191, 191, 191, 0.35);
+  flex-wrap: wrap;
+}
+
+.resume__description {
+  width: 60%;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.resume__description--title h1,
+h2 {
+  font-size: 40px;
+  margin-top: 5px;
+  font-family: "Lora", serif;
+}
+
+.resume__description--title h2 {
+  margin-bottom: 15px;
+}
+
+.resume__description--paragraph {
+  letter-spacing: 1.1;
+  font-family: "Raleway", sans-serif;
+}
+
+.resume__description--paragraph a {
+  text-decoration: underline;
+  color: black;
+}
+
+.resume__description--paragraph a,
+em {
+  font-weight: bold;
+}
+
+.resume__image img {
+  border-radius: 90%;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+/* IMAGES */
+.images {
+  flex-wrap: wrap;
+}
+
+.images__card {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 400px;
+  width: 350px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+/* IMAGE PROJECT AND DATA */
+.images__card--title {
+  margin: 10px;
+  text-align: center;
+  font-family: "Lora", serif;
+}
+
+.images__card--project {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images__card--project:hover {
+  cursor: pointer;
+}
+
+.images__card--mainDescription {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.images__card--mainDescription i {
+  color: black;
+}
+
+/* FOOTER */
+.footer {
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  height: 50px;
+}
+
+/*  RESPONSIVE      */
+@media only screen and (max-width: 1200px) {
+  .header__title {
+    font-size: 10px;
+  }
+
+  .resume__description {
+    margin-left: 0px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
