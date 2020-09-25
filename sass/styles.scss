@@ -90,13 +90,15 @@ em {
 
 /* IMAGE PROJECT AND DATA */
 .images__card--title {
-    margin:$marginCard;
+    margin: $marginCard;
     text-align: center;
     font-family: $title;
 }
+
+
 .images__card--project {
-    margin: $marginCard;
     display: flex;
+    height: $heightCardText;
     justify-content: center;
     align-items: center;
 }
@@ -131,7 +133,12 @@ em {
         font-size: 10px;
     }
 
+    .images__card {
+        height: 450px;
+    }
     .resume__description {
         margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
     }
 }

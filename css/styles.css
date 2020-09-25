@@ -134,8 +134,8 @@ em {
 }
 
 .images__card--project {
-  margin: 10px;
   display: flex;
+  height: 360px;
   justify-content: center;
   align-items: center;
 }
@@ -168,8 +168,14 @@ em {
     font-size: 10px;
   }
 
+  .images__card {
+    height: 450px;
+  }
+
   .resume__description {
     margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
   }
 }
 
