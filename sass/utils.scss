@@ -35,10 +35,12 @@ a>i {
 }
 
 .subtitle h1:hover {
-    width: 100%;
+    width: 99%;
+    padding-right: 0px;
 }
 .subtitle h1:not(:hover) {
     width: 300px;
+    padding-right: 10px;
 }
 
 .rotate{
