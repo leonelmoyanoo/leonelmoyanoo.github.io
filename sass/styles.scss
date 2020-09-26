@@ -11,6 +11,8 @@
     @extend .icons;
     background-color: $description;
     flex-wrap: wrap;
+    position: relative;
+    transition: all 1s;
 }
 
 .resume__description {
@@ -48,6 +50,7 @@ em {
     border-radius: 90%;
     box-shadow: $box-shadow;
     width: 100%;
+    transition: all 1s;
 }
 /* SKILLS */
 .skills{
@@ -56,6 +59,7 @@ em {
 }
 /* PROJECTS */
 .projects {
+    position: relative;
     @extend .main;
     @extend .sections;
 }

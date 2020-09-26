@@ -23,8 +23,10 @@ a > i {
 }
 
 .subtitle {
+  position: relative;
   background-color: #40708823;
   width: 100%;
+  transition: all 1s;
 }
 
 .subtitle h1 {
@@ -41,12 +43,30 @@ a > i {
 
 .subtitle h1:hover {
   width: 100%;
-  text-align: center;
 }
 
 .subtitle h1:not(:hover) {
   width: 300px;
-  text-align: center;
+}
+
+.rotate {
+  transform: rotate(-360deg);
+}
+
+.up-title {
+  top: -1000px;
+}
+
+.down-title {
+  top: 0px;
+}
+
+.down-body {
+  bottom: -1000px;
+}
+
+.up-body {
+  bottom: 0px;
 }
 
 /* MIX */
@@ -205,6 +225,7 @@ a > i {
 }
 
 .main, .projects, .skills, .resume {
+  transition: all 1s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,6 +244,8 @@ a > i {
 .resume {
   background-color: #132743;
   flex-wrap: wrap;
+  position: relative;
+  transition: all 1s;
 }
 
 .resume__description {
@@ -260,10 +283,15 @@ em {
   border-radius: 90%;
   box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.2);
   width: 100%;
+  transition: all 1s;
 }
 
 /* SKILLS */
 /* PROJECTS */
+.projects {
+  position: relative;
+}
+
 .projects__card {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 20px;

@@ -16,8 +16,10 @@ a>i {
 }
 
 .subtitle {
+    position: relative;
     background-color: #40708823;
     width: 100%;
+    transition: all 1s;
 }
 
 .subtitle h1 {
@@ -34,9 +36,24 @@ a>i {
 
 .subtitle h1:hover {
     width: 100%;
-    text-align: center;
 }
 .subtitle h1:not(:hover) {
     width: 300px;
-    text-align: center;
+}
+
+.rotate{
+    transform: rotate(-360deg);
+}
+.up-title{
+    top:-1000px;
+}
+.down-title{
+    top:0px
+}
+
+.down-body{
+    bottom:-1000px;
+}
+.up-body{
+    bottom:0px;
 }
