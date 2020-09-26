@@ -1,0 +1,42 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    transition: all 0.5s;
+    color: $words;
+    cursor: default;
+}
+
+body {
+    background-color: white;
+}
+
+a>i {
+    cursor: pointer;
+}
+
+.subtitle {
+    background-color: #40708823;
+    width: 100%;
+}
+
+.subtitle h1 {
+    background-color: $secondary;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-family: $subtitle;
+    font-size: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.subtitle h1:hover {
+    width: 100%;
+    text-align: center;
+}
+.subtitle h1:not(:hover) {
+    width: 300px;
+    text-align: center;
+}

@@ -4,22 +4,6 @@
 @import "./mix.scss";
 @import "./extends.scss";
 
-* {
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-    transition: all 0.5s;
-    color: $words;
-    cursor: default;
-}
-
-body {
-    background-color: $third;
-}
-
-a>i {
-    cursor: pointer;
-}
 
 /* RESUME */
 .resume {
@@ -65,14 +49,17 @@ em {
     box-shadow: $box-shadow;
     width: 100%;
 }
-
-/* PROJECTS */
-.images {
+/* SKILLS */
+.skills{
     @extend .main;
-    flex-wrap: wrap;
+    @extend .sections;
 }
-
-.images__card {
+/* PROJECTS */
+.projects {
+    @extend .main;
+    @extend .sections;
+}
+.projects__card {
     @extend .icons;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -87,14 +74,14 @@ em {
 }
 
 /* IMAGE PROJECT AND DATA */
-.images__card--title {
+.projects__card--title {
     margin: 15px;
     text-align: center;
     font-family: $title;
 }
 
 
-.images__card--project {
+.projects__card--project {
     background-color: white;
     display: flex;
     height: $heightCardText;
@@ -104,24 +91,24 @@ em {
 }
 
 
-.images__card--project:hover {
+.projects__card--project:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.597);
     color: white;
 }
 
-.images__card--github {
+.projects__card--github{
     @include margin($marginCard, $marginCard);
     position: absolute;
 }
 
-.images__card--description {
+.projects__card--description {
     margin: $marginCard;
     text-align: center;
     font-family: $text;
 }
 
-.images__card--description a{
+.projects__card--description a{
     cursor: pointer;
     text-decoration: underline;
 }
@@ -144,7 +131,7 @@ em {
         font-size: 10px;
     }
 
-    .images__card {
+    .projects__card {
         height: 500px;
     }
 

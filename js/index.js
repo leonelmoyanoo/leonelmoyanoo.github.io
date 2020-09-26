@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+    
+});
 function redirect($url) {
     switch ($url) {
         case "rickandmorty":

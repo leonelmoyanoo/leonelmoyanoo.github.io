@@ -1,14 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
 /* font-family: 'Lora', serif;*/
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap");
-/* font-family: 'Raleway', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@1,300&display=swap");
+/* font-family: 'Epilogue', sans-serif;; */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap");
 /* COLORS */
 /* project'S CARDS */
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  transition: all 0.5s;
+  color: #f5f0f0;
+  cursor: default;
+}
+
+body {
+  background-color: white;
+}
+
+a > i {
+  cursor: pointer;
+}
+
+.subtitle {
+  background-color: #40708823;
+  width: 100%;
+}
+
+.subtitle h1 {
+  background-color: #407088;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.subtitle h1:hover {
+  width: 100%;
+  text-align: center;
+}
+
+.subtitle h1:not(:hover) {
+  width: 300px;
+  text-align: center;
+}
+
 /* MIX */
 @-webkit-keyframes tiembla {
   16.65% {
-    -moz-transform: translateY(8px);
-    transform: translateY(8px);
+    -moz-transform: translateY(15px);
+    transform: translateY(15px);
   }
   33.3% {
     -moz-transform: translateY(-6px);
@@ -33,8 +78,8 @@
 }
 @-moz-keyframes tiembla {
   16.65% {
-    -moz-transform: translateY(8px);
-    transform: translateY(8px);
+    -moz-transform: translateY(15px);
+    transform: translateY(15px);
   }
   33.3% {
     -moz-transform: translateY(-6px);
@@ -59,8 +104,8 @@
 }
 @-o-keyframes tiembla {
   16.65% {
-    -o-transform: translateY(8px);
-    transform: translateY(8px);
+    -o-transform: translateY(15px);
+    transform: translateY(15px);
   }
   33.3% {
     -o-transform: translateY(-6px);
@@ -85,8 +130,8 @@
 }
 @-ms-keyframes tiembla {
   16.65% {
-    -ms-transform: translateY(8px);
-    transform: translateY(8px);
+    -ms-transform: translateY(15px);
+    transform: translateY(15px);
   }
   33.3% {
     -ms-transform: translateY(-6px);
@@ -120,35 +165,35 @@
   margin: 10px;
 }
 
-.icons a, .footer a, .images__card a, .resume a {
+.icons a, .footer a, .projects__card a, .resume a {
   text-decoration: none;
   color: #f5f0f0;
 }
-.icons a:hover, .footer a:hover, .images__card a:hover, .resume a:hover {
+.icons a:hover, .footer a:hover, .projects__card a:hover, .resume a:hover {
   text-decoration: underline;
 }
-.icons .social a:hover, .footer .social a:hover, .images__card .social a:hover, .resume .social a:hover {
+.icons .social a:hover, .footer .social a:hover, .projects__card .social a:hover, .resume .social a:hover {
   text-decoration: none;
 }
-.icons i:hover, .footer i:hover, .images__card i:hover, .resume i:hover {
+.icons i:hover, .footer i:hover, .projects__card i:hover, .resume i:hover {
   -webkit-animation: tiembla 0.5s;
   -moz-animation: tiembla 0.5s;
   -o-animation: tiembla 0.5s;
   -ms-animation: tiembla 0.5s;
 }
-.icons .social .fa-twitter-square:hover, .footer .social .fa-twitter-square:hover, .images__card .social .fa-twitter-square:hover, .resume .social .fa-twitter-square:hover {
+.icons .social .fa-twitter-square:hover, .footer .social .fa-twitter-square:hover, .projects__card .social .fa-twitter-square:hover, .resume .social .fa-twitter-square:hover {
   color: rgba(84, 170, 228, 0.789);
 }
-.icons .social .fa-linkedin:hover, .footer .social .fa-linkedin:hover, .images__card .social .fa-linkedin:hover, .resume .social .fa-linkedin:hover {
+.icons .social .fa-linkedin:hover, .footer .social .fa-linkedin:hover, .projects__card .social .fa-linkedin:hover, .resume .social .fa-linkedin:hover {
   color: rgba(0, 119, 181, 0.789);
 }
-.icons .social .fa-github-square:hover, .footer .social .fa-github-square:hover, .images__card .social .fa-github-square:hover, .resume .social .fa-github-square:hover {
+.icons .social .fa-github-square:hover, .footer .social .fa-github-square:hover, .projects__card .social .fa-github-square:hover, .resume .social .fa-github-square:hover {
   color: rgba(0, 0, 0, 0.789);
 }
-.icons .social .fa-envelope:hover, .footer .social .fa-envelope:hover, .images__card .social .fa-envelope:hover, .resume .social .fa-envelope:hover {
+.icons .social .fa-envelope:hover, .footer .social .fa-envelope:hover, .projects__card .social .fa-envelope:hover, .resume .social .fa-envelope:hover {
   color: rgba(255, 206, 71, 0.789);
 }
-.icons .social .fa-instagram-square:hover, .footer .social .fa-instagram-square:hover, .images__card .social .fa-instagram-square:hover, .resume .social .fa-instagram-square:hover {
+.icons .social .fa-instagram-square:hover, .footer .social .fa-instagram-square:hover, .projects__card .social .fa-instagram-square:hover, .resume .social .fa-instagram-square:hover {
   color: rgba(245, 51, 93, 0.789);
 }
 
@@ -159,32 +204,19 @@
   display: flex;
 }
 
-.main, .images, .resume {
+.main, .projects, .skills, .resume {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px;
 }
-.main .social i, .images .social i, .resume .social i {
+.main .social i, .projects .social i, .skills .social i, .resume .social i {
   margin-left: 5px;
   margin-top: 10px;
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  text-decoration: none;
-  transition: all 0.5s;
-  color: #f5f0f0;
-  cursor: default;
-}
-
-body {
-  background-color: #70adb5;
-}
-
-a > i {
-  cursor: pointer;
+.sections, .projects, .skills {
+  flex-wrap: wrap;
 }
 
 /* RESUME */
@@ -212,7 +244,7 @@ h2 {
 
 .resume__description--paragraph {
   letter-spacing: 1.1;
-  font-family: "Raleway", sans-serif;
+  font-family: "Epilogue", sans-serif;
 }
 
 .resume__description--paragraph a {
@@ -226,16 +258,13 @@ em {
 
 .resume__image img {
   border-radius: 90%;
-  box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.2);
   width: 100%;
 }
 
+/* SKILLS */
 /* PROJECTS */
-.images {
-  flex-wrap: wrap;
-}
-
-.images__card {
+.projects__card {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   background-color: #407088;
@@ -245,17 +274,17 @@ em {
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-  box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* IMAGE PROJECT AND DATA */
-.images__card--title {
+.projects__card--title {
   margin: 15px;
   text-align: center;
   font-family: "Lora", serif;
 }
 
-.images__card--project {
+.projects__card--project {
   background-color: white;
   display: flex;
   height: 360px;
@@ -264,25 +293,25 @@ em {
   padding: 20px 0px;
 }
 
-.images__card--project:hover {
+.projects__card--project:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.597);
   color: white;
 }
 
-.images__card--github {
+.projects__card--github {
   margin-left: 20px;
   margin-right: 20px;
   position: absolute;
 }
 
-.images__card--description {
+.projects__card--description {
   margin: 20px;
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Epilogue", sans-serif;
 }
 
-.images__card--description a {
+.projects__card--description a {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -301,7 +330,7 @@ em {
     font-size: 10px;
   }
 
-  .images__card {
+  .projects__card {
     height: 500px;
   }
 
