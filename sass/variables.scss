@@ -1,9 +1,14 @@
+/* COLORS */
+$primary: #132743;
+$secondary: #407088;
+$third:#70adb5;
+
 $container: #111721;
 $words: rgb(245, 240, 240);
-$description: rgba(191, 191, 191, 0.35);
-$box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+$description: $primary;
+$box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.6);
 
 /* project'S CARDS */
-$marginCard:10px;
+$marginCard:20px;
 $heightCardText:360px;
 $widthCardText:310px;
