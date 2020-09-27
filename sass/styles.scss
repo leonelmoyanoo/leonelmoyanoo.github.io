@@ -22,7 +22,7 @@
 }
 
 .resume__description--title h1,
-h2 {
+.resume__description--title h2 {
     font-size: 40px;
     margin-top: 5px;
     font-family: $title;
@@ -52,17 +52,20 @@ em {
     width: 100%;
     transition: all 1s;
 }
+
 /* SKILLS */
-.skills{
+.skills {
     @extend .main;
     @extend .sections;
 }
+
 /* PROJECTS */
 .projects {
     position: relative;
     @extend .main;
     @extend .sections;
 }
+
 .projects__card {
     @extend .icons;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -101,7 +104,7 @@ em {
     color: white;
 }
 
-.projects__card--github{
+.projects__card--github {
     @include margin($marginCard, $marginCard);
     position: absolute;
 }
@@ -112,7 +115,7 @@ em {
     font-family: $text;
 }
 
-.projects__card--description a{
+.projects__card--description a {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -131,12 +134,19 @@ em {
 
 /*  RESPONSIVE      */
 @media only screen and (max-width: 1200px) {
-    .header__title {
-        font-size: 10px;
+    h1, h2 {
+        font-size: 20px!important;
     }
-
+    .subtitle h1 {
+        padding: 5px;
+        height: 25px;
+    }
+.projects{
+    padding: 10px;
+}
     .projects__card {
         height: 500px;
+        margin: 10px;
     }
 
     .resume__description {

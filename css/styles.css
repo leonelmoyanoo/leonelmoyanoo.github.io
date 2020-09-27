@@ -257,7 +257,7 @@ a > i {
 }
 
 .resume__description--title h1,
-h2 {
+.resume__description--title h2 {
   font-size: 40px;
   margin-top: 5px;
   font-family: "Lora", serif;
@@ -356,12 +356,22 @@ em {
 
 /*  RESPONSIVE      */
 @media only screen and (max-width: 1200px) {
-  .header__title {
-    font-size: 10px;
+  h1, h2 {
+    font-size: 20px !important;
+  }
+
+  .subtitle h1 {
+    padding: 5px;
+    height: 25px;
+  }
+
+  .projects {
+    padding: 10px;
   }
 
   .projects__card {
     height: 500px;
+    margin: 10px;
   }
 
   .resume__description {
