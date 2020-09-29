@@ -15,8 +15,7 @@ The virtual machine will be provisioned with the following software:
 * MySQL database.
 * PHP scripting language.
 * PHPMyAdmin.
-* NodeJS open source server environment.
-* Composer, Yarn packages managers.
+* Composer packages manager.
 
 ### Setup ###
 
