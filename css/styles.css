@@ -271,10 +271,9 @@ a > i {
   overflow: hidden;
 }
 
-.header__nav i {
+.header__nav .header__nav--icon {
   cursor: pointer;
-  float: right;
-  display: hidden;
+  display: none;
 }
 
 .header__nav a {
@@ -527,7 +526,7 @@ h2 {
     display: none;
   }
 
-  .header__nav a.icon {
+  .header__nav a.header__nav--icon {
     float: right;
     display: block;
   }
@@ -536,7 +535,7 @@ h2 {
     position: relative;
   }
 
-  .header__nav.responsive a.icon {
+  .header__nav.responsive a.header__nav--icon {
     position: absolute;
     right: 0;
     top: 0;

@@ -19,10 +19,9 @@
     overflow: hidden;
 }
 
-.header__nav i {
+.header__nav .header__nav--icon{
     cursor: pointer;
-    float: right;
-    display: hidden;
+    display: none;
 }
 
 
@@ -83,7 +82,7 @@
         display: none;
     }
 
-    .header__nav a.icon {
+    .header__nav a.header__nav--icon  {
         float: right;
         display: block;
     }
@@ -93,7 +92,7 @@
         position: relative;
     }
 
-    .header__nav.responsive a.icon {
+    .header__nav.responsive a.header__nav--icon  {
         position: absolute;
         right: 0;
         top: 0;
