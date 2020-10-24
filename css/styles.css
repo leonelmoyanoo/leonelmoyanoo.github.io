@@ -14,6 +14,10 @@
   cursor: default;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
 }
@@ -30,7 +34,7 @@ a > i {
 }
 
 .subtitle h2 {
-  background-color: black;
+  background-color: #111721;
   padding: 10px;
   width: 100%;
   text-align: center;
@@ -234,12 +238,38 @@ a > i {
   padding: 50px;
 }
 .main .social i, .bodyContainer .social i, .skills .social i, .resume .social i {
-  margin-left: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 10px;
 }
 
 .sections, .bodyContainer, .skills {
   flex-wrap: wrap;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+}
+
+.header__nav {
+  width: 100%;
+  overflow: hidden;
+}
+
+.header__nav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header__nav a:hover {
+  cursor: pointer;
+  background-color: #ddd;
+  color: #111721;
 }
 
 /* RESUME */
@@ -379,7 +409,8 @@ em {
 
 /*  RESPONSIVE      */
 @media only screen and (max-width: 1200px) {
-  h1, h2 {
+  h1,
+h2 {
     font-size: 20px !important;
   }
 

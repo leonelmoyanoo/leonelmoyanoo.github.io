@@ -4,6 +4,31 @@
 @import "./mix.scss";
 @import "./extends.scss";
 
+/* HEADER */
+.header {
+    width: 100%;
+}
+
+.header__nav {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.header__nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.header__nav a:hover{
+    cursor: pointer;
+    background-color: #ddd;
+    color: $container;
+}
 
 /* RESUME */
 .resume {
@@ -78,7 +103,7 @@ em {
     flex-direction: column;
     padding-bottom: $marginCard;
     box-shadow: $box-shadow;
-    background-color:white;
+    background-color: white;
 }
 
 /* IMAGE PROJECT AND DATA */
@@ -87,7 +112,8 @@ em {
     text-align: center;
     font-family: $title;
 }
-.projects__card--title h3{
+
+.projects__card--title h3 {
     color: $secondary;
 }
 
@@ -100,7 +126,8 @@ em {
     align-items: center;
     padding: $marginCard 0px;
 }
-.projects__card--project img{
+
+.projects__card--project img {
     height: 200px;
     cursor: pointer;
 }
@@ -114,10 +141,12 @@ em {
 .projects__card--github {
     @include margin($marginCard, $marginCard);
 }
-.projects__card--github i{
-    color:black;
+
+.projects__card--github i {
+    color: black;
 }
-.projects__card--github i:hover{
+
+.projects__card--github i:hover {
     -webkit-animation: none;
     -moz-animation: none;
     -o-animation: none;
@@ -129,14 +158,15 @@ em {
     text-align: center;
     font-family: $text;
 }
-.projects__card--description p{
-    color:black;
+
+.projects__card--description p {
+    color: black;
 }
 
 .projects__card--description a {
     cursor: pointer;
     text-decoration: underline;
-    color:black;
+    color: black;
 }
 
 /* FOOTER */
@@ -153,16 +183,21 @@ em {
 
 /*  RESPONSIVE      */
 @media only screen and (max-width: 1200px) {
-    h1, h2 {
-        font-size: 20px!important;
+
+    h1,
+    h2 {
+        font-size: 20px !important;
     }
+
     .subtitle h2 {
         padding: 5px;
         height: 25px;
     }
-.projects{
-    padding: 10px;
-}
+
+    .projects {
+        padding: 10px;
+    }
+
     .projects__card {
         height: 500px;
         margin: 10px;
