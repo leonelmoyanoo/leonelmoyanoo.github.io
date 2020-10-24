@@ -34,6 +34,10 @@
     align-items: center;
     padding: $marginCard 0px;
 }
+.projects__card--project:hover {
+    cursor: pointer;
+    color: $secondary;
+}
 
 .projects__card--project img {
     height: 200px;
@@ -41,10 +45,6 @@
 }
 
 
-.projects__card--project:hover {
-    cursor: pointer;
-    color: white;
-}
 
 .projects__card--github {
     @include margin($marginCard, $marginCard);

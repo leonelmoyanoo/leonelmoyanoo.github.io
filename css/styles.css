@@ -427,14 +427,14 @@ em {
   padding: 20px 0px;
 }
 
+.projects__card--project:hover {
+  cursor: pointer;
+  color: #6E8CC2;
+}
+
 .projects__card--project img {
   height: 200px;
   cursor: pointer;
-}
-
-.projects__card--project:hover {
-  cursor: pointer;
-  color: white;
 }
 
 .projects__card--github {
