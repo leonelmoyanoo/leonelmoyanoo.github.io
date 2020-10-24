@@ -7,6 +7,9 @@
 /* HEADER */
 .header {
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color:$primary;
 }
 
 .header__nav {
@@ -26,7 +29,7 @@
 
 .header__nav a:hover{
     cursor: pointer;
-    background-color: #ddd;
+    background-color: #40708823;
     color: $container;
 }
 
@@ -38,6 +41,7 @@
     flex-wrap: wrap;
     position: relative;
     transition: all 1s;
+    padding-top: 100px;
 }
 
 .resume__description {
