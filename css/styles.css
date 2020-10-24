@@ -284,6 +284,16 @@ a > i {
   color: white;
 }
 
+/* ABOUT ME */
+.aboutMe {
+  background-color: #40708823;
+}
+
+.aboutMe--title h1 {
+  font-size: 40px;
+  color: black;
+}
+
 /* RESUME */
 /* RESUME */
 .resume {
@@ -292,6 +302,7 @@ a > i {
   padding-top: 100px;
   position: relative;
   transition: all 1s;
+  justify-content: space-around;
 }
 
 .resume__image {
@@ -314,12 +325,16 @@ a > i {
 
 .resume__description--title h1,
 .resume__description--title h2 {
-  font-size: 40px;
   margin-top: 5px;
   font-family: "Lora", serif;
 }
 
+.resume__description--title h1 {
+  font-size: 40px;
+}
+
 .resume__description--title h2 {
+  font-size: 30px;
   margin-bottom: 15px;
 }
 
