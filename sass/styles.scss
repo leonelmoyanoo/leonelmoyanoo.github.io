@@ -59,18 +59,18 @@ em {
     @extend .sections;
 }
 
-/* PROJECTS */
-.projects {
+.bodyContainer {
     position: relative;
     @extend .main;
     @extend .sections;
 }
 
+/* PROJECTS */
+
 .projects__card {
     @extend .icons;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    background-color: $secondary;
     height: 400px;
     width: 350px;
     margin: $marginCard;
@@ -86,6 +86,9 @@ em {
     text-align: center;
     font-family: $title;
 }
+.projects__card--title h3{
+    color: $secondary;
+}
 
 
 .projects__card--project {
@@ -98,12 +101,12 @@ em {
 }
 .projects__card--project img{
     height: 200px;
+    cursor: pointer;
 }
 
 
 .projects__card--project:hover {
     cursor: pointer;
-    background-color: $primary;
     color: white;
 }
 
@@ -111,16 +114,29 @@ em {
     @include margin($marginCard, $marginCard);
     position: absolute;
 }
+.projects__card--github i{
+    color:black;
+}
+.projects__card--github i:hover{
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+}
 
 .projects__card--description {
     margin: $marginCard;
     text-align: center;
     font-family: $text;
 }
+.projects__card--description p{
+    color:black;
+}
 
 .projects__card--description a {
     cursor: pointer;
     text-decoration: underline;
+    color:black;
 }
 
 /* FOOTER */
@@ -140,7 +156,7 @@ em {
     h1, h2 {
         font-size: 20px!important;
     }
-    .subtitle h1 {
+    .subtitle h2 {
         padding: 5px;
         height: 25px;
     }

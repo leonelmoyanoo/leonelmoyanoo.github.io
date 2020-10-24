@@ -29,24 +29,24 @@ a > i {
   transition: all 1s;
 }
 
-.subtitle h1 {
+.subtitle h2 {
   background-color: #6E8CC2;
   padding: 10px;
   width: 100%;
   text-align: center;
   height: 50px;
   font-family: "Merriweather", serif;
-  font-size: 40px;
+  font-size: 35px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.subtitle h1:hover {
+.subtitle h2:hover {
   width: 99%;
   padding-right: 0px;
 }
 
-.subtitle h1:not(:hover) {
+.subtitle h2:not(:hover) {
   width: 300px;
   padding-right: 10px;
 }
@@ -226,19 +226,19 @@ a > i {
   display: flex;
 }
 
-.main, .projects, .skills, .resume {
+.main, .bodyContainer, .skills, .resume {
   transition: all 1s;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px;
 }
-.main .social i, .projects .social i, .skills .social i, .resume .social i {
+.main .social i, .bodyContainer .social i, .skills .social i, .resume .social i {
   margin-left: 5px;
   margin-top: 10px;
 }
 
-.sections, .projects, .skills {
+.sections, .bodyContainer, .skills {
   flex-wrap: wrap;
 }
 
@@ -289,15 +289,14 @@ em {
 }
 
 /* SKILLS */
-/* PROJECTS */
-.projects {
+.bodyContainer {
   position: relative;
 }
 
+/* PROJECTS */
 .projects__card {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  background-color: #6E8CC2;
   height: 400px;
   width: 350px;
   margin: 20px;
@@ -314,6 +313,10 @@ em {
   font-family: "Lora", serif;
 }
 
+.projects__card--title h3 {
+  color: #6E8CC2;
+}
+
 .projects__card--project {
   background-color: white;
   display: flex;
@@ -325,11 +328,11 @@ em {
 
 .projects__card--project img {
   height: 200px;
+  cursor: pointer;
 }
 
 .projects__card--project:hover {
   cursor: pointer;
-  background-color: #70adb5;
   color: white;
 }
 
@@ -339,15 +342,31 @@ em {
   position: absolute;
 }
 
+.projects__card--github i {
+  color: black;
+}
+
+.projects__card--github i:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+}
+
 .projects__card--description {
   margin: 20px;
   text-align: center;
   font-family: "Epilogue", sans-serif;
 }
 
+.projects__card--description p {
+  color: black;
+}
+
 .projects__card--description a {
   cursor: pointer;
   text-decoration: underline;
+  color: black;
 }
 
 /* FOOTER */
@@ -364,7 +383,7 @@ em {
     font-size: 20px !important;
   }
 
-  .subtitle h1 {
+  .subtitle h2 {
     padding: 5px;
     height: 25px;
   }
