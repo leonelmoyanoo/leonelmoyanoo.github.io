@@ -1,8 +1,8 @@
-@import "./imports.scss";
-@import "./variables.scss";
-@import "./utils.scss";
-@import "./mix.scss";
-@import "./extends.scss";
+@import "./utils/imports.scss";
+@import "./utils/variables.scss";
+@import "./utils/utils.scss";
+@import "./utils/mix.scss";
+@import "./utils/extends.scss";
 
 /* HEADER */
 .header {
@@ -39,143 +39,14 @@
 }
 
 /* RESUME */
-.resume {
-    @extend .main;
-    @extend .icons;
-    background-color: $description;
-    flex-wrap: wrap;
-    position: relative;
-    transition: all 1s;
-}
-
-.resume__description {
-    width: 60%;
-    margin-left: 50px;
-    text-align: center;
-}
-
-.resume__description--title h1,
-.resume__description--title h2 {
-    font-size: 40px;
-    margin-top: 5px;
-    font-family: $title;
-}
-
-.resume__description--title h2 {
-    margin-bottom: 15px;
-}
-
-.resume__description--paragraph {
-    letter-spacing: 1.1;
-    font-family: $text;
-}
-
-.resume__description--paragraph a {
-    text-decoration: underline;
-}
-
-.resume__description--paragraph a,
-em {
-    font-weight: bold;
-}
-
-.resume__image img {
-    border-radius: 90%;
-    box-shadow: $box-shadow;
-    width: 100%;
-    transition: all 1s;
-}
+@import "./body/resume.scss";
 
 /* SKILLS */
-.skills {
-    @extend .main;
-    @extend .sections;
-}
-
-.bodyContainer {
-    position: relative;
-    @extend .main;
-    @extend .sections;
-}
+@import "./body/skills.scss";
 
 /* PROJECTS */
+@import "./body/projects.scss";
 
-.projects__card {
-    @extend .icons;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    height: 400px;
-    width: 350px;
-    margin: $marginCard;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: $marginCard;
-    box-shadow: $box-shadow;
-    background-color: white;
-}
-
-/* IMAGE PROJECT AND DATA */
-.projects__card--title {
-    margin: 15px;
-    text-align: center;
-    font-family: $title;
-}
-
-.projects__card--title h3 {
-    color: $secondary;
-}
-
-
-.projects__card--project {
-    background-color: white;
-    display: flex;
-    height: $heightCardText;
-    justify-content: center;
-    align-items: center;
-    padding: $marginCard 0px;
-}
-
-.projects__card--project img {
-    height: 200px;
-    cursor: pointer;
-}
-
-
-.projects__card--project:hover {
-    cursor: pointer;
-    color: white;
-}
-
-.projects__card--github {
-    @include margin($marginCard, $marginCard);
-}
-
-.projects__card--github i {
-    color: black;
-}
-
-.projects__card--github i:hover {
-    -webkit-animation: none;
-    -moz-animation: none;
-    -o-animation: none;
-    -ms-animation: none;
-}
-
-.projects__card--description {
-    margin: $marginCard;
-    text-align: center;
-    font-family: $text;
-}
-
-.projects__card--description p {
-    color: black;
-}
-
-.projects__card--description a {
-    cursor: pointer;
-    text-decoration: underline;
-    color: black;
-}
 
 /* FOOTER */
 .footer {

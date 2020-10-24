@@ -18,6 +18,11 @@ body {
 a>i {
     cursor: pointer;
 }
+.bodyContainer {
+    position: relative;
+    @extend .main;
+    @extend .sections;
+}
 
 .subtitle {
     position: relative;

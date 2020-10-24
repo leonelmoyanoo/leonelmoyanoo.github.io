@@ -1,0 +1,48 @@
+
+/* RESUME */
+.resume {
+    @extend .main;
+    @extend .icons;
+    background-color: $description;
+    flex-wrap: wrap;
+    position: relative;
+    transition: all 1s;
+}
+
+.resume__description {
+    width: 60%;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.resume__description--title h1,
+.resume__description--title h2 {
+    font-size: 40px;
+    margin-top: 5px;
+    font-family: $title;
+}
+
+.resume__description--title h2 {
+    margin-bottom: 15px;
+}
+
+.resume__description--paragraph {
+    letter-spacing: 1.1;
+    font-family: $text;
+}
+
+.resume__description--paragraph a {
+    text-decoration: underline;
+}
+
+.resume__description--paragraph a,
+em {
+    font-weight: bold;
+}
+
+.resume__image img {
+    border-radius: 90%;
+    box-shadow: $box-shadow;
+    width: 100%;
+    transition: all 1s;
+}
