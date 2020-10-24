@@ -9,7 +9,7 @@
     width: 100%;
     position: fixed;
     z-index: 1;
-    background-color:$primary;
+    background-color: $primary;
 }
 
 .header__nav {
@@ -27,10 +27,15 @@
     font-size: 17px;
 }
 
-.header__nav a:hover{
+.header__nav a:hover {
     cursor: pointer;
-    background-color: #40708823;
+    background-color: $background;
     color: $container;
+}
+
+.header__nav a:active {
+    background-color: $secondary;
+    color: white;
 }
 
 /* RESUME */
@@ -41,7 +46,6 @@
     flex-wrap: wrap;
     position: relative;
     transition: all 1s;
-    padding-top: 100px;
 }
 
 .resume__description {
@@ -192,6 +196,7 @@ em {
     h2 {
         font-size: 20px !important;
     }
+
 
     .subtitle h2 {
         padding: 5px;

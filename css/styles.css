@@ -275,13 +275,17 @@ a > i {
   color: #111721;
 }
 
+.header__nav a:active {
+  background-color: #6E8CC2;
+  color: white;
+}
+
 /* RESUME */
 .resume {
   background-color: #70adb5;
   flex-wrap: wrap;
   position: relative;
   transition: all 1s;
-  padding-top: 100px;
 }
 
 .resume__description {
