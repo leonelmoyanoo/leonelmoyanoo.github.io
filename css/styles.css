@@ -262,11 +262,19 @@ a > i {
   position: fixed;
   z-index: 1;
   background-color: #70adb5;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__nav {
   width: 100%;
   overflow: hidden;
+}
+
+.header__nav i {
+  cursor: pointer;
+  float: right;
+  display: hidden;
 }
 
 .header__nav a {
@@ -515,6 +523,35 @@ h2 {
     font-size: 20px !important;
   }
 
+  .header__nav a {
+    display: none;
+  }
+
+  .header__nav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .header__nav.responsive {
+    position: relative;
+  }
+
+  .header__nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header__nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .aboutMe--description p {
+    width: 100%;
+  }
+
   .subtitle h2 {
     padding: 5px;
     height: 25px;
@@ -527,6 +564,10 @@ h2 {
   .projects__card {
     height: 500px;
     margin: 10px;
+  }
+
+  .resume__image {
+    width: 50%;
   }
 
   .resume__description {

@@ -16,18 +16,21 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <a href="#Projects">
+            <a href="#Projects" onclick="redirectOnTheSamePage()">
                 Projects
             </a>
-            <a href="#Experience">
+            <a href="#Experience" onclick="redirectOnTheSamePage()">
                 Experience
             </a>
-            <a href="#Skills">
+            <a href="#Skills" onclick="redirectOnTheSamePage()">
                 Skills
             </a>
-            <a href="#aboutMe">
+            <a href="#aboutMe" onclick="redirectOnTheSamePage()">
                 About me
             </a>
+            <a href="javascript:void(0);" class="icon" onclick="subMenu()">
+                <i class="fas fa-bars fa-lg"></i>
+              </a>
         </nav>
     </header>
     <section class="resume">
