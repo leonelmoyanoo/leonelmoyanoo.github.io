@@ -5,12 +5,23 @@
     @extend .icons;
     background-color: $description;
     flex-wrap: wrap;
+    padding-top: 100px;
     position: relative;
+    transition: all 1s;
+}
+.resume__image {
+    width: 25%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.resume__image img {
+    border-radius: 90%;
+    box-shadow: $box-shadow;
     transition: all 1s;
 }
 
 .resume__description {
-    width: 60%;
     margin-left: 50px;
     text-align: center;
 }
@@ -38,11 +49,4 @@
 .resume__description--paragraph a,
 em {
     font-weight: bold;
-}
-
-.resume__image img {
-    border-radius: 90%;
-    box-shadow: $box-shadow;
-    width: 100%;
-    transition: all 1s;
 }

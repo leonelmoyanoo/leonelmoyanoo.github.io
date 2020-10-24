@@ -289,12 +289,25 @@ a > i {
 .resume {
   background-color: #70adb5;
   flex-wrap: wrap;
+  padding-top: 100px;
   position: relative;
   transition: all 1s;
 }
 
+.resume__image {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume__image img {
+  border-radius: 90%;
+  box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 1s;
+}
+
 .resume__description {
-  width: 60%;
   margin-left: 50px;
   text-align: center;
 }
@@ -322,13 +335,6 @@ a > i {
 .resume__description--paragraph a,
 em {
   font-weight: bold;
-}
-
-.resume__image img {
-  border-radius: 90%;
-  box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  transition: all 1s;
 }
 
 /* SKILLS */
