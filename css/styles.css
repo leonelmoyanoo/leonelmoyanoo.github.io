@@ -30,7 +30,7 @@ a > i {
 }
 
 .subtitle h1 {
-  background-color: #407088;
+  background-color: #6E8CC2;
   padding: 10px;
   width: 100%;
   text-align: center;
@@ -297,7 +297,7 @@ em {
 .projects__card {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  background-color: #407088;
+  background-color: #6E8CC2;
   height: 400px;
   width: 350px;
   margin: 20px;
@@ -323,9 +323,13 @@ em {
   padding: 20px 0px;
 }
 
+.projects__card--project img {
+  height: 200px;
+}
+
 .projects__card--project:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.597);
+  background-color: #70adb5;
   color: white;
 }
 

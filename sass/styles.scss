@@ -96,11 +96,14 @@ em {
     align-items: center;
     padding: $marginCard 0px;
 }
+.projects__card--project img{
+    height: 200px;
+}
 
 
 .projects__card--project:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.597);
+    background-color: $primary;
     color: white;
 }
 
