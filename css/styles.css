@@ -547,6 +547,16 @@ h2 {
     text-align: center;
   }
 
+  .resume__image img, .resume__image {
+    width: 90%;
+  }
+
+  .resume__description {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
   .aboutMe--description p {
     width: 100%;
   }
@@ -563,16 +573,6 @@ h2 {
   .projects__card {
     height: 500px;
     margin: 10px;
-  }
-
-  .resume__image {
-    width: 50%;
-  }
-
-  .resume__description {
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
   }
 }
 
