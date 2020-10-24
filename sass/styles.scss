@@ -17,6 +17,9 @@
 .header__nav {
     width: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
 }
 
 .header__nav .header__nav--icon{
@@ -26,7 +29,6 @@
 
 
 .header__nav a {
-    float: right;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -90,6 +92,7 @@
 
     .header__nav.responsive {
         position: relative;
+    display: initial;
     }
 
     .header__nav.responsive a.header__nav--icon  {
