@@ -340,7 +340,7 @@ em {
 /* SKILLS */
 /* SKILLS */
 .skills {
-  padding: 20px;
+  padding: 50px;
 }
 
 .skills__container {
@@ -352,7 +352,7 @@ em {
 }
 
 .skills__container--items {
-  margin: 0.5rem 1rem;
+  margin: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -360,6 +360,7 @@ em {
 }
 
 .skills__container--items--item {
+  margin: 0px 15px;
   text-align: center;
 }
 
