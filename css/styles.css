@@ -30,7 +30,7 @@ a > i {
 }
 
 .subtitle h2 {
-  background-color: #6E8CC2;
+  background-color: black;
   padding: 10px;
   width: 100%;
   text-align: center;
@@ -234,7 +234,7 @@ a > i {
   padding: 50px;
 }
 .main .social i, .bodyContainer .social i, .skills .social i, .resume .social i {
-  margin-left: 5px;
+  margin-left: 25px;
   margin-top: 10px;
 }
 
@@ -304,6 +304,7 @@ em {
   flex-direction: column;
   padding-bottom: 20px;
   box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 /* IMAGE PROJECT AND DATA */
@@ -339,7 +340,6 @@ em {
 .projects__card--github {
   margin-left: 20px;
   margin-right: 20px;
-  position: absolute;
 }
 
 .projects__card--github i {

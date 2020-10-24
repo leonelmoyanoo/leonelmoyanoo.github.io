@@ -78,6 +78,7 @@ em {
     flex-direction: column;
     padding-bottom: $marginCard;
     box-shadow: $box-shadow;
+    background-color:white;
 }
 
 /* IMAGE PROJECT AND DATA */
@@ -112,7 +113,6 @@ em {
 
 .projects__card--github {
     @include margin($marginCard, $marginCard);
-    position: absolute;
 }
 .projects__card--github i{
     color:black;
