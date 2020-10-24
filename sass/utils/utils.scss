@@ -5,6 +5,7 @@
     transition: all 0.5s;
     color: $words;
     cursor: default;
+    color:black;
 }
 
 html {
@@ -33,6 +34,7 @@ a>i {
 
 .subtitle h2 {
     background-color: $container;
+    color:white;
     padding: 10px;
     width: 100%;
     text-align: center;

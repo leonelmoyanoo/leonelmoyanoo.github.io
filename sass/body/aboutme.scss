@@ -1,7 +1,17 @@
 .aboutMe{
     background-color:$background;
+    display: block;
+    text-align: center;
 }
 .aboutMe--title h1{
     font-size: 40px;
-    color:black;
+}
+.aboutMe--description{
+    display: flex;
+    justify-content:center;
+    margin: 20px 0px;
+}
+.aboutMe--description p{
+    line-height: 200%;
+    width: 50%;
 }

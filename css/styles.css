@@ -12,6 +12,7 @@
   transition: all 0.5s;
   color: #f5f0f0;
   cursor: default;
+  color: black;
 }
 
 html {
@@ -39,6 +40,7 @@ a > i {
 
 .subtitle h2 {
   background-color: #111721;
+  color: white;
   padding: 10px;
   width: 100%;
   text-align: center;
@@ -195,6 +197,9 @@ a > i {
   margin: 10px;
 }
 
+.icons i, .footer i, .projects__card i, .resume i {
+  color: white;
+}
 .icons a, .footer a, .projects__card a, .resume a {
   text-decoration: none;
   color: #f5f0f0;
@@ -287,11 +292,23 @@ a > i {
 /* ABOUT ME */
 .aboutMe {
   background-color: #40708823;
+  display: block;
+  text-align: center;
 }
 
 .aboutMe--title h1 {
   font-size: 40px;
-  color: black;
+}
+
+.aboutMe--description {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.aboutMe--description p {
+  line-height: 200%;
+  width: 50%;
 }
 
 /* RESUME */
@@ -362,10 +379,6 @@ em {
   align-items: left;
 }
 
-.skills__container--title h2 {
-  color: black;
-}
-
 .skills__container--items {
   margin: 25px;
   display: flex;
@@ -377,10 +390,6 @@ em {
 .skills__container--items--item {
   margin: 0px 15px;
   text-align: center;
-}
-
-.skills__container--items--item p {
-  color: black;
 }
 
 .skills__container--items--item i {
@@ -483,10 +492,6 @@ em {
   margin: 20px;
   text-align: center;
   font-family: "Epilogue", sans-serif;
-}
-
-.projects__card--description p {
-  color: black;
 }
 
 .projects__card--description a {
