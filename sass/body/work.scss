@@ -1,27 +1,33 @@
 .work {
     flex-wrap: wrap;
-    display: block;
 }
 
 .work__card {
-    margin: 0px 50px;
+    @extend .card;
+    width: 350px;
+    flex-wrap: wrap;
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: flex-start;
+    margin: 0px 50px;
+    padding: 20px;
 }
 
-.work__card--header {}
+.work__card--header--subtitle {
+    color:rgb(112, 112, 112);
+}
 
 .work__card--header--position {
     margin: 5px 0px 15px 0px;
 }
 
-.work__card--img {
+.work__card--imgContainer {
+}
+.work__card--imgContainer--img {
     margin: 20px;
-    width: 30%;
 }
 
-.work__card img {
+.work__card--imgContainer--img img {
     height: 100px;
-    width: auto;
 }
