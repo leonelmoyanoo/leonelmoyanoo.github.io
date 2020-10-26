@@ -87,6 +87,10 @@
     h2 {
         font-size: 20px !important;
     }
+    .subtitle h2 {
+        padding: 5px;
+        height: 25px;
+    }
     .header__nav a {
         display: none;
     }
@@ -120,10 +124,10 @@
     .aboutMe--description p {
         width: 100%;
     }
-    .subtitle h2 {
-        padding: 5px;
-        height: 25px;
-    }
+
+.work__card {
+    margin: 0px 0px 50px 0px;
+}
     .projects {
         padding: 10px;
     }
