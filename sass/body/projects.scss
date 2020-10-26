@@ -2,19 +2,14 @@
 
 .projects__card {
     @extend .icons;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
+    @extend .card;
     height: 400px;
     width: 350px;
-    margin: $marginCard;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: $marginCard;
-    box-shadow: $box-shadow;
-    background-color: white;
 }
 
+
 /* IMAGE PROJECT AND DATA */
+
 .projects__card--title {
     margin: 15px;
     text-align: center;
@@ -25,7 +20,6 @@
     color: $secondary;
 }
 
-
 .projects__card--project {
     background-color: white;
     display: flex;
@@ -34,6 +28,7 @@
     align-items: center;
     padding: $marginCard 0px;
 }
+
 .projects__card--project:hover {
     cursor: pointer;
     color: $secondary;
@@ -43,8 +38,6 @@
     height: 200px;
     cursor: pointer;
 }
-
-
 
 .projects__card--github {
     @include margin($marginCard, $marginCard);
@@ -66,7 +59,6 @@
     text-align: center;
     font-family: $text;
 }
-
 
 .projects__card--description a {
     cursor: pointer;

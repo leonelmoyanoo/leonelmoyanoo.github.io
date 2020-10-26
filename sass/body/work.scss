@@ -1,0 +1,27 @@
+.work {
+    flex-wrap: wrap;
+    display: block;
+}
+
+.work__card {
+    margin: 0px 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.work__card--header {}
+
+.work__card--header--position {
+    margin: 5px 0px 15px 0px;
+}
+
+.work__card--img {
+    margin: 20px;
+    width: 30%;
+}
+
+.work__card img {
+    height: 100px;
+    width: auto;
+}

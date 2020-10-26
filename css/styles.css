@@ -61,6 +61,17 @@ a > i {
   padding-right: 10px;
 }
 
+.card, .projects__card {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
 .rotate {
   transform: rotate(-360deg);
 }
@@ -378,6 +389,33 @@ em {
   font-weight: bold;
 }
 
+/* WORK */
+.work {
+  flex-wrap: wrap;
+  display: block;
+}
+
+.work__card {
+  margin: 0px 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.work__card--header--position {
+  margin: 5px 0px 15px 0px;
+}
+
+.work__card--img {
+  margin: 20px;
+  width: 30%;
+}
+
+.work__card img {
+  height: 100px;
+  width: auto;
+}
+
 /* SKILLS */
 /* SKILLS */
 .skills {
@@ -439,16 +477,8 @@ em {
 /* PROJECTS */
 /* PROJECTS */
 .projects__card {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
   height: 400px;
   width: 350px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  box-shadow: 4px -1px 5px 5px rgba(0, 0, 0, 0.2);
-  background-color: white;
 }
 
 /* IMAGE PROJECT AND DATA */
@@ -550,7 +580,8 @@ h2 {
     text-align: center;
   }
 
-  .resume__image img, .resume__image {
+  .resume__image img,
+.resume__image {
     width: 90%;
   }
 
