@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap");
 /* COLORS */
 /* project'S CARDS */
+/*SOCIAL*/
 * {
   padding: 0px;
   margin: 0px;
@@ -228,19 +229,19 @@ a > i {
   -ms-animation: tiembla 0.5s;
 }
 .icons .social .fa-twitter-square:hover, .footer .social .fa-twitter-square:hover, .projects__card .social .fa-twitter-square:hover, .resume .social .fa-twitter-square:hover {
-  color: rgba(84, 170, 228, 0.789);
+  color: #55ACEE;
 }
 .icons .social .fa-linkedin:hover, .footer .social .fa-linkedin:hover, .projects__card .social .fa-linkedin:hover, .resume .social .fa-linkedin:hover {
-  color: rgba(0, 119, 181, 0.789);
+  color: #007bb5;
 }
 .icons .social .fa-github-square:hover, .footer .social .fa-github-square:hover, .projects__card .social .fa-github-square:hover, .resume .social .fa-github-square:hover {
   color: rgba(0, 0, 0, 0.789);
 }
 .icons .social .fa-envelope:hover, .footer .social .fa-envelope:hover, .projects__card .social .fa-envelope:hover, .resume .social .fa-envelope:hover {
-  color: rgba(255, 206, 71, 0.789);
+  color: #dd4b39;
 }
 .icons .social .fa-instagram-square:hover, .footer .social .fa-instagram-square:hover, .projects__card .social .fa-instagram-square:hover, .resume .social .fa-instagram-square:hover {
-  color: rgba(245, 51, 93, 0.789);
+  color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .header__elements {
@@ -547,7 +548,95 @@ em {
 /* PROJECTS */
 .contact {
   background-color: #40708823;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.contact__card {
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.contact__card--social {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contact__card--social--link {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.contact__card--social .fab {
+  padding: 20px;
+  margin: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contact__card--social--link .fab:hover {
+  opacity: 0.7;
+}
+
+#linkedin {
+  background: #007cb58c;
+}
+
+.contact__card--social--link .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+#github {
+  background: #1b1f23ab;
+}
+
+#github span {
+  color: white;
+}
+
+.contact__card--social--link .fa-github {
+  background: #1b1f23;
+  color: white;
+}
+
+#gmail {
+  background: #dd4c39aa;
+}
+
+.contact__card--social--link .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+#twitter {
+  background: #55acee8e;
+}
+
+.contact__card--social--link .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+#instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.contact__card--social--link .fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+}
+
+.contact__card--social--link span {
+  cursor: pointer;
+  font-size: 20px;
 }
 
 /* FOOTER */
@@ -622,6 +711,10 @@ h2 {
   .projects__card {
     height: 500px;
     margin: 10px;
+  }
+
+  .contact__card--social--link span {
+    font-size: 15px;
   }
 }
 
