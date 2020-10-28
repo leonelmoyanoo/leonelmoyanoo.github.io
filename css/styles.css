@@ -544,6 +544,12 @@ em {
   color: black;
 }
 
+/* PROJECTS */
+.contact {
+  background-color: #40708823;
+  display: block;
+}
+
 /* FOOTER */
 .footer {
   justify-content: center;

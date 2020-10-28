@@ -68,6 +68,10 @@
 
 @import "./body/projects.scss";
 
+/* PROJECTS */
+
+@import "./body/contact.scss";
+
 /* FOOTER */
 
 .footer {
@@ -124,10 +128,9 @@
     .aboutMe--description p {
         width: 100%;
     }
-
-.work__card {
-    margin: 0px 0px 50px 0px;
-}
+    .work__card {
+        margin: 0px 0px 50px 0px;
+    }
     .projects {
         padding: 10px;
     }
