@@ -145,6 +145,13 @@
     .projects__card--project img {
         height: 100%;
     }
+    .contact__card{
+        width:100%;
+    }
+    .contact__card--social--link{
+        display: flex;
+        flex-direction: column;
+    }
     .contact__card--social--link span {
         font-size: 15px;
     }

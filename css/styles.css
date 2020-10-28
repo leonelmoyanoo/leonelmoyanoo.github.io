@@ -556,6 +556,7 @@ em {
 .contact__card {
   margin: 10px;
   flex-wrap: wrap;
+  width: 420px;
 }
 
 .contact__card--social {
@@ -720,6 +721,15 @@ h2 {
 
   .projects__card--project img {
     height: 100%;
+  }
+
+  .contact__card {
+    width: 100%;
+  }
+
+  .contact__card--social--link {
+    display: flex;
+    flex-direction: column;
   }
 
   .contact__card--social--link span {
