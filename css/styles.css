@@ -709,8 +709,17 @@ h2 {
   }
 
   .projects__card {
-    height: 500px;
+    height: 250px;
     margin: 10px;
+  }
+
+  .projects__card--project {
+    padding: 10px 0px;
+    height: 35%;
+  }
+
+  .projects__card--project img {
+    height: 100%;
   }
 
   .contact__card--social--link span {
