@@ -332,6 +332,11 @@ a > i {
   width: 50%;
 }
 
+.aboutMe--description p a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* RESUME */
 /* RESUME */
 .resume {
