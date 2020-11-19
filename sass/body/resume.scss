@@ -1,5 +1,5 @@
-
 /* RESUME */
+
 .resume {
     @extend .main;
     @extend .icons;
@@ -8,14 +8,16 @@
     padding-top: 100px;
     position: relative;
     transition: all 1s;
-    justify-content:space-around;
+    justify-content: space-around;
 }
+
 .resume__image {
     width: 25%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
+
 .resume__image img {
     border-radius: 90%;
     box-shadow: $box-shadow;
