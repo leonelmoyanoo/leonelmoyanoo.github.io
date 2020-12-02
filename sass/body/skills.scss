@@ -1,49 +1,65 @@
-
 /* SKILLS */
+
 .skills {
     padding: 50px;
 }
 
-.skills__container{
-    align-items:left;
+.skills__container {
+    align-items: left;
 }
 
-.skills__container--items{
+.skills__container--items {
     margin: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
 }
-.skills__container--items--item{
+
+.skills__container--items--item {
     margin: 0px 15px;
     text-align: center;
 }
-.skills__container--items--item i{
-    color:black;
-    margin: 10px ;
+
+.skills__container--items--item i {
+    color: black;
+    margin: 10px;
 }
+
+
 /* FRONT END */
-.skills__container--items--item .fa-html5{
-    color:#c75033;
+
+.skills__container--items--item .fa-html5 {
+    color: #c75033;
 }
+
 .skills__container--items--item .fa-css3-alt {
-    color:#1368a9;
+    color: #1368a9;
 }
-.skills__container--items--item .fa-js{
-    color:#efd81d;
+
+.skills__container--items--item .fa-js {
+    color: #efd81d;
 }
-.skills__container--items--item .fa-react{
-    color:#6bd1fd;
+
+.skills__container--items--item .fa-react {
+    color: #6bd1fd;
 }
+
+
 /* BACK END */
-.skills__container--items--item .fa-java{
-    color:#00779a;
+
+.skills__container--items--item .fa-java {
+    color: #00779a;
 }
-.skills__container--items--item .fa-node-js{
-    color:#669f64;
+
+.skills__container--items--item .fa-node-js {
+    color: #669f64;
 }
-.skills__container--items--item .fa-php{
-    color:#838dba;
+
+.skills__container--items--item .fa-php {
+    color: #838dba;
+}
+
+.skills__container--items--item .fa-laravel {
+    color: #f34e39;
 }
