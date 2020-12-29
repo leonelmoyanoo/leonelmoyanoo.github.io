@@ -4,26 +4,26 @@
 
 .work__card {
     @extend .card;
-    width: 350px;
+    width: 300px;
     flex-wrap: wrap;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: flex-start;
-    margin: 0px 50px;
+    margin: 10px 10px;
     padding: 20px;
 }
 
 .work__card--header--subtitle {
-    color:rgb(112, 112, 112);
+    color: rgb(112, 112, 112);
 }
 
 .work__card--header--position {
     margin: 5px 0px 15px 0px;
 }
 
-.work__card--imgContainer {
-}
+.work__card--imgContainer {}
+
 .work__card--imgContainer--img {
     margin: 20px;
 }
