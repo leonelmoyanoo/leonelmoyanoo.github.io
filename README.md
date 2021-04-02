@@ -8,7 +8,7 @@ Please read all the document before start using the project.
 
 A lot of PHP websites and applications don’t require much server configuration or overhead at first. This virtual machine should have all your needs for doing basic development so you don’t have to worry about configuring the virtual environment and you can simply focus on your code.
 
-The virtual machine will be provisioned with the following software:
+The virtual machine was provisioned with the following software:
 
 * Ubuntu Linux.
 * Apache Web Server.
@@ -16,6 +16,11 @@ The virtual machine will be provisioned with the following software:
 * PHP scripting language.
 * PHPMyAdmin.
 * Composer packages manager.
+
+Other software included:
+
+* Git.
+* Zip.
 
 ### Setup ###
 
@@ -49,24 +54,6 @@ Password : pass
 That's all, as you can see, very simple.
 
 If you need more information related to Vagrant, go to the official [Vagrant documentation](https://www.vagrantup.com/docs/).
-
-### Fixing known issues ###
-
-#### Failed to open/create the internal network ####
-
-If you are on Windows, then you may get the following error:
-```
-There was an error while executing `VBoxManage`, a CLI used by Vagrant
-for controlling VirtualBox. The command and stderr is shown below.
-Command: ["startvm", "23fa136e-013c-40f4-bcd1-76f195eb863a", "--type", "headless"]
-Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-
-VirtualBox Host-Only Ethernet Adapter #2' (VERR_INTNET_FLT_IF_NOT_FOUND).
-VBoxManage.exe: error: Failed to attach the network LUN (VERR_INTNET_FLT_IF_NOT_FOUND)
-VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component ConsoleWrap, interface IConsole
-```
-Open Control Panel >> Network and Sharing Center. Now click on Change Adapter Settings. Right click on the adapter whose Name or the Device Name matches with VirtualBox Host-Only Ethernet Adapter #2 and click on Properties. Click on the Configure button.
-
-Now click on the Driver tab. Click on Update Driver. Select Browse my computer for drivers. Now choose Let me pick from a list of available drivers on my computer. Select the choice you get and click on Next. Click Close to finish the update. Now go back to your command window and repeat the vagrant up command. It should work fine this time.
 
 ### Why Vagrant and not Docker ###
 
