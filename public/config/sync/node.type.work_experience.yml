@@ -1,0 +1,18 @@
+uuid: 97b4deca-dab9-46a0-8619-2b879a268fcd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Work Experience'
+type: work_experience
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

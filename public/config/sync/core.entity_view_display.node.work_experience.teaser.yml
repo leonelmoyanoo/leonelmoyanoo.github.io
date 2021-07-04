@@ -1,0 +1,43 @@
+uuid: 4681b472-c550-48bb-b0b0-735274079510
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.work_experience.body
+    - field.field.node.work_experience.field_company
+    - field.field.node.work_experience.field_company_logo
+    - field.field.node.work_experience.field_range
+    - node.type.work_experience
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.work_experience.teaser
+targetEntityType: node
+bundle: work_experience
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_company: true
+  field_company_logo: true
+  field_range: true

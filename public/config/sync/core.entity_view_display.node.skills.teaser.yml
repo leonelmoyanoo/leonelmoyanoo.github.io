@@ -1,0 +1,33 @@
+uuid: 413e222d-99b9-452b-96e5-5737cc307ca4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.skills.field_course
+    - field.field.node.skills.field_s
+    - field.field.node.skills.field_type
+    - node.type.skills
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.skills.teaser
+targetEntityType: node
+bundle: skills
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_course: true
+  field_s: true
+  field_type: true

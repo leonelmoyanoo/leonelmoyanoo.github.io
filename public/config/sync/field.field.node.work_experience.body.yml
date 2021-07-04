@@ -1,0 +1,23 @@
+uuid: f91cbe55-7105-4b91-9e60-3b64180a4364
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.work_experience
+  module:
+    - text
+id: node.work_experience.body
+field_name: body
+entity_type: node
+bundle: work_experience
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

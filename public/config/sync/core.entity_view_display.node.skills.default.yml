@@ -1,0 +1,58 @@
+uuid: 51b45d37-8268-4c08-af3a-04b30422bd12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.skills.field_course
+    - field.field.node.skills.field_s
+    - field.field.node.skills.field_type
+    - node.type.skills
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.skills.default
+targetEntityType: node
+bundle: skills
+mode: default
+content:
+  field_course:
+    weight: 101
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_s:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

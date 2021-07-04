@@ -1,0 +1,28 @@
+uuid: 392963bd-2cd2-4750-9174-4ac40b9d6079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_s
+    - node.type.skills
+id: node.skills.field_s
+field_name: field_s
+entity_type: node
+bundle: skills
+label: 'Skill Relative'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      skills: skills
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

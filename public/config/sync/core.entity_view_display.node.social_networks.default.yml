@@ -1,0 +1,40 @@
+uuid: eed2d607-ca3a-459f-90f9-53e3197bc2be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.social_networks.field_url
+    - node.type.social_networks
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.social_networks.default
+targetEntityType: node
+bundle: social_networks
+mode: default
+content:
+  field_url:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

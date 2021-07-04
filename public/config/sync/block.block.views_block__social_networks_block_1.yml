@@ -1,0 +1,29 @@
+uuid: e44fe8ea-91d8-450a-9e62-3184c5379775
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.social_networks
+  module:
+    - system
+    - views
+  theme:
+    - my_website_theme
+id: views_block__social_networks_block_1
+theme: my_website_theme
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:social_networks-block_1'
+settings:
+  id: 'views_block:social_networks-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

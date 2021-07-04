@@ -1,0 +1,21 @@
+uuid: cbf67e01-44bc-427b-a9be-ee1b2cca57c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_range
+    - node.type.work_experience
+  module:
+    - datetime_range
+id: node.work_experience.field_range
+field_name: field_range
+entity_type: node
+bundle: work_experience
+label: Range
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

@@ -1,0 +1,29 @@
+uuid: 14428cd0-1ede-4bb5-8d15-baf3b8b028d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.skills
+  module:
+    - system
+    - views
+  theme:
+    - my_website_theme
+id: views_block__skills_block_1
+theme: my_website_theme
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:skills-block_1'
+settings:
+  id: 'views_block:skills-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

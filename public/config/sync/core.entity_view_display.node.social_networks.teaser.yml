@@ -1,0 +1,29 @@
+uuid: c37654ff-8e2b-4911-a8ab-b9e35a63fa4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_networks.field_url
+    - node.type.social_networks
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.social_networks.teaser
+targetEntityType: node
+bundle: social_networks
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_url: true

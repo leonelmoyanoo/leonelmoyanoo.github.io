@@ -1,0 +1,18 @@
+uuid: 07825951-199e-4ab4-bcdf-a7d3f0548231
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Social Networks'
+type: social_networks
+description: 'My social networks'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

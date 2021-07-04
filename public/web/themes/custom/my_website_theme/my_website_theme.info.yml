@@ -1,0 +1,9 @@
+name: my_website_theme
+description: This is my custom theme
+type: theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+libraries:
+  - my_website_theme/global

@@ -1,0 +1,14 @@
+uuid: 93b2f304-7074-437e-8523-bdd9f6a2a8b5
+name: 'Leonel Moyano'
+mail: leonelmoyano1809@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,29 @@
+uuid: ce65966a-b046-4c6d-95ec-8154d66b690b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.work_experience
+  module:
+    - system
+    - views
+  theme:
+    - my_website_theme
+id: views_block__work_experience_block_1
+theme: my_website_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:work_experience-block_1'
+settings:
+  id: 'views_block:work_experience-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
