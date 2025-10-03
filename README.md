@@ -1,16 +1,37 @@
-### Hi there 👋
+# 👋 Hi! I'm Leonel Moyano
+
+Welcome to my portfolio! I'm a Full Stack Developer specializing in **Laravel**, **PHP**, and **React**. I am passionate about building modern, accessible, and high-performance web experiences.
+
+## 🚀 About Me
+
+- 🎯 Full Stack Developer with experience in scalable projects.
+- 🌱 Always learning new technologies and best practices.
+- 💡 I love solving problems and learning something new every day.
+- 🤝 Open to collaborating on interesting and challenging projects.
+
+## 🛠️ Technologies & Tools
+
+- **Languages:** PHP, JavaScript, TypeScript, HTML, CSS
+- **Frameworks:** Laravel, React
+- **Database:** MySQL, NoSQL
+- **Tools:** Git
+- **DevOps Tools:** Docker, GitHub Actions, Linux, Nginx
 
 <!--
-**leonelmoyanoo/leonelmoyanoo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 📈 GitHub Stats
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+![Leonel Moyano's GitHub stats](https://github-readme-stats.vercel.app/api?username=leonelmoyanoo&show_icons=true&theme=radical)
 -->
+## 📫 How to reach me
+
+- Email: leonelmoyanoo@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/leonelmoyanoo/)
+- [Twitter](https://twitter.com/leonelmoyanoo)
+
+## ⚡ Fun Fact
+
+> I'm always learning .
+
+---
+
+Thank you for visiting my portfolio! 🚀
