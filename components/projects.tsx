@@ -21,7 +21,7 @@ const projects = [
             "/assets/projects/noentendi/6.png"
         ],
         technologies: ["TypeScript", "HTML", "CSS", "JavaScript"],
-        liveUrl: "https://www.noentendi.app/",
+        liveUrl: "https://noentendi.app/",
     },
     {
         title: "Bakery",
