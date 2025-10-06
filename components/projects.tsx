@@ -8,22 +8,6 @@ import Image from "next/image"
 
 const projects = [
     {
-        title: "No entendí",
-        description:
-            "A minimalist web app that lets students anonymously signal when they're feeling lost in class. With a single click, they can express confusion pressure-free, giving the teacher an instant pulse-check on the group's overall understanding.",
-        media: [
-            "/assets/projects/noentendi/4.png",
-            "/assets/projects/noentendi/1.png",
-            "/assets/projects/noentendi/2.png",
-            "/assets/projects/noentendi/3.png",
-            "/assets/projects/noentendi/4.png",
-            "/assets/projects/noentendi/5.png",
-            "/assets/projects/noentendi/6.png"
-        ],
-        technologies: ["TypeScript", "HTML", "CSS", "JavaScript"],
-        liveUrl: "https://noentendi.app/",
-    },
-    {
         title: "Bakery",
         description:
             "Landing page for an artisanal bakery. Showcases featured products, store information, and a contact form.",
@@ -65,6 +49,22 @@ const projects = [
         ],
         imageMaxWidth: "50%",
         technologies: ["React", "JavaScript"],
+    },
+    {
+        title: "No entendí",
+        description:
+            "A minimalist web app that lets students anonymously signal when they're feeling lost in class. With a single click, they can express confusion pressure-free, giving the teacher an instant pulse-check on the group's overall understanding.",
+        media: [
+            "/assets/projects/noentendi/4.png",
+            "/assets/projects/noentendi/1.png",
+            "/assets/projects/noentendi/2.png",
+            "/assets/projects/noentendi/3.png",
+            "/assets/projects/noentendi/4.png",
+            "/assets/projects/noentendi/5.png",
+            "/assets/projects/noentendi/6.png"
+        ],
+        technologies: ["TypeScript", "HTML", "CSS", "JavaScript"],
+        liveUrl: "https://noentendi.app/",
     },
 ]
 
