@@ -6,13 +6,6 @@ export function About() {
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p>
             Hi, I'm Leonel Moyano, an Argentinian Full Stack Developer specializing in building modern web applications.
-            I work with <span className="text-foreground font-semibold">Laravel</span> for robust backend systems,{" "}
-            <span className="text-foreground font-semibold">React</span> for dynamic user interfaces, and{" "}
-            <span className="text-foreground font-semibold">TypeScript</span> for type-safe, maintainable code.
-          </p>
-          <p>
-            I'm passionate about creating experiences
-            that not only look great but are meticulously built for performance and accessibility.
           </p>
           <p>
             I'm also studying Data Science and constantly learning new technologies in my free time. Check out what I'm

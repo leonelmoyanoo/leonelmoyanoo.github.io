@@ -18,6 +18,7 @@ const projects = [
         ],
         technologies: ["TypeScript", "HTML", "CSS", "JavaScript"],
         liveUrl: "https://bocconcino-panaderia.vercel.app/",
+        topic: "Publish page"
     },
     {
         title: "Buffet App",
@@ -36,6 +37,7 @@ const projects = [
         imageMaxWidth: "50%",
         //liveUrl: "https://leonelmoyanoo.github.io/RickAndMortyAPI/",
         //githubUrl: "https://github.com/leonelmoyanoo/RickAndMortyAPI",
+        topic: "Restaurant"
     },
     {
         title: "Recycle App",
@@ -49,6 +51,8 @@ const projects = [
         ],
         imageMaxWidth: "50%",
         technologies: ["React", "JavaScript"],
+        topic: "Ecologist"
+
     },
     {
         title: "No entendí",
@@ -65,6 +69,7 @@ const projects = [
         ],
         technologies: ["TypeScript", "HTML", "CSS", "JavaScript"],
         liveUrl: "https://noentendi.app/",
+        topic: "Education"
     },
 ]
 
@@ -93,14 +98,10 @@ export function Projects() {
         setActiveImage((prev) => (prev - 1 + images.length) % images.length)
     }
     return (
-        <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8">
+        <section id="projects" className="pt-24 px-4 sm:px-6 lg:px-8">
             <div className="container mx-auto">
                 <div className="max-w-3xl mb-12">
                     <h2 className="text-4xl sm:text-5xl font-bold mb-4">Featured Projects</h2>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                        A selection of projects I've worked on, ranging from enterprise applications to personal experiments. Each
-                        project showcases different aspects of my skills in full-stack development.
-                    </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -121,6 +122,7 @@ export function Projects() {
                                         height={300}
                                         className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
                                     />
+                                    {project.topic && <Badge className="absolute top-4 right-4 bg-primary">{project.topic}</Badge>}
                                 </div>
                             </CardHeader>
                             <CardContent className="pt-6 space-y-4">
