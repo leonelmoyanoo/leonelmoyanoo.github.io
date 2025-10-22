@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "Full Stack Developer specializing in Laravel, React, and TypeScript. Building modern web applications with clean code and great user experiences.",
   keywords: "Leonel Moyano, Full Stack Developer, Laravel, React, TypeScript, Web Developer, Argentina, Portfolio",
   authors: [{ name: "Leonel Moyano" }],
+  icons: {
+    icon: "/assets/icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -35,8 +38,7 @@ export const metadata: Metadata = {
     description: "Full Stack Developer specializing in Laravel, React, and TypeScript",
     images: ["/leonelmoyanoo.github.io/img/yo.jpg"],
     creator: "@leonelmoyanoo",
-  },
-    generator: 'v0.app'
+  }
 }
 
 export default function RootLayout({
