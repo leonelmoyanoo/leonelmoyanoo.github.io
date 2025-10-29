@@ -10,8 +10,8 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Leonel Moyano - Full Stack Developer",
   description:
-    "Full Stack Developer specializing in Laravel, React, and TypeScript. Building modern web applications with clean code and great user experiences.",
-  keywords: "Leonel Moyano, Full Stack Developer, Laravel, React, TypeScript, Web Developer, Argentina, Portfolio",
+    "Full Stack Developer specializing in PHP, React and TypeScript. Building modern web applications with clean code and great user experiences.",
+  keywords: "Leonel Moyano, Full Stack Developer, PHP, Laravel, React, TypeScript, Web Developer, Argentina, Portfolio",
   authors: [{ name: "Leonel Moyano" }],
   icons: {
     icon: "/assets/icon.png",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://leonelmoyano.com",
     title: "Leonel Moyano - Full Stack Developer",
-    description: "Full Stack Developer specializing in Laravel, React, and TypeScript",
+    description: "Full Stack Developer specializing in PHP, React and TypeScript",
     siteName: "Leonel Moyano Portfolio",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Leonel Moyano - Full Stack Developer",
-    description: "Full Stack Developer specializing in Laravel, React, and TypeScript",
+    description: "Full Stack Developer specializing in PHP, React and TypeScript",
     images: ["/leonelmoyanoo.github.io/img/yo.jpg"],
     creator: "@leonelmoyanoo",
   }
