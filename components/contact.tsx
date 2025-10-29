@@ -57,7 +57,7 @@ export function Contact() {
             const Icon = method.icon
             return (
               <Card key={method.name} className="border-2 hover:border-primary/50 transition-all group">
-                <CardContent className="pt-6">
+                <CardContent>
                   <a href={method.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4">
                     <div className={`transition-colors ${method.color}`}>
                       <Icon className="h-6 w-6" />

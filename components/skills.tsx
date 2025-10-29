@@ -10,20 +10,22 @@ import {
     faDrupal,
     faHtml5,
     faCss,
-    faGitAlt,
     faDocker
 } from '@fortawesome/free-brands-svg-icons'
 import {faDatabase, faPlug} from '@fortawesome/free-solid-svg-icons'
 import {useState} from "react";
+import {faVuejs} from "@fortawesome/free-brands-svg-icons/faVuejs";
+import {faAws} from "@fortawesome/free-brands-svg-icons/faAws";
 
 const skills = [
     {
         category: "Frontend",
         technologies: [
             {name: "React", icon: faReact, color: "#61DAFB"},
-            {name: "JavaScript", icon: faJs, color: "#F7DF1E"},
+            {name: "Vue", icon: faVuejs, color: "#4FC08D"},
             {name: "TypeScript", icon: faJs, color: "#007ACC"},
-            {name: "HTML", icon: faHtml5, color: "#E34F26"},
+            {name: "JavaScript", icon: faJs, color: "#F7DF1E"},
+            {name: "HTML", icon: faHtml5, color: "#E34F26", width: "col-6"},
             {name: "CSS", icon: faCss, color: "#2965F1"},
         ],
     },
@@ -33,16 +35,16 @@ const skills = [
             {name: "Laravel", icon: faLaravel, color: "#FF2D20"},
             {name: "Symfony", icon: faSymfony, color: "#000000"},
             {name: "Drupal", icon: faDrupal, color: "#0678BE"},
-            {name: "PHP", icon: faPhp, color: "#777BB4"},
+            {name: "PHP", icon: faPhp, color: "#777BB4"}
         ],
     },
     {
         category: "Tools & Others",
         technologies: [
             {name: "Docker", icon: faDocker, color: "#2496ED"},
+            {name:"AWS", icon: faAws, color: "#FF9900"},
             {name: "MySQL", icon: faDatabase, color: "#4479A1"},
-            {name: "MongoDB", icon: faDatabase, color: "#4479A1"},
-            {name: "Git", icon: faGitAlt, color: "#F05032"},
+            {name: "MongoDB", icon: faDatabase, color: "#47A248"},
             {name: "REST APIs", icon: faPlug, color: "#6E6E6E"},
         ],
     },
@@ -53,7 +55,7 @@ const SkillCategory = ({skillGroup}) => (
         {skillGroup.technologies.map((tech) => (
             <div
                 key={tech.name}
-                className="flex items-center gap-3 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors"
+                className={`flex items-center gap-3 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors ${tech.width ? tech.width : ''}`}
             >
                 <FontAwesomeIcon style={{color: tech.color, width: '15%'}} icon={tech.icon}
                                  size="2x" className="text-primary"/>

@@ -46,7 +46,7 @@ export function Experience() {
           {experiences.map((exp, index) => (
             <Card key={index} className="border-2 hover:border-primary/50 transition-colors">
               <CardHeader>
-                <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+                <div className="flex sm:flex-row gap-6 items-center">
                   <div className="relative w-20 h-20 flex-shrink-0 bg-background rounded-lg p-2">
                     <Image
                       src={exp.logo || "/placeholder.svg"}
